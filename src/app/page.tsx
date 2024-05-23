@@ -6,6 +6,7 @@ import "./globals.css";
 import UpcomingWebinar from "@/components/UpcomingWebinar";
 import GeminiEffect from "@/components/GeminiEffect";
 import Instructor from "@/components/Instructor";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <UpcomingWebinar />
       <GeminiEffect />
       <Instructor />
+      <Footer />
     </main>
   );
 }
