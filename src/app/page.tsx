@@ -3,6 +3,9 @@ import HeroSection from "@/components/HeroSection";
 import TestimonialCard from "@/components/TestimonialCard";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import "./globals.css";
+import UpcomingWebinar from "@/components/UpcomingWebinar";
+import GeminiEffect from "@/components/GeminiEffect";
+import Instructor from "@/components/Instructor";
 
 export default function Home() {
   return (
@@ -11,6 +14,9 @@ export default function Home() {
       <FeaturedSection />
       <WhyChooseUs />
       <TestimonialCard />
+      <UpcomingWebinar />
+      <GeminiEffect />
+      <Instructor />
     </main>
   );
 }
