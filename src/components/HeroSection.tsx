@@ -19,7 +19,7 @@ const HeroSection = () => {
           journey today. Wheather you are a beginner or looking to refine your
           skills, join us to unlock your true potential.
         </p>
-        <div className="mt-4 ">
+        <div className="mt-6 ">
           <Link href={"/courses"}>
             <Button
               borderRadius="2rem"

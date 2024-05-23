@@ -31,3 +31,26 @@ body {
     text-wrap: balance;
   }
 }
+
+.hide-scrollbar {
+  overflow: hidden; /* Hide all overflow (default behavior) */
+}
+
+.hide-scrollbar::-webkit-scrollbar,
+.hide-scrollbar::-moz-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* Added CSS for the .scrollbar-hidden class */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hidden .max-w-2xl {
+  overflow: hidden;
+}

@@ -4,6 +4,7 @@ import courseData from "../data/music_courses.json";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
 import { Button } from "./ui/moving-border";
+import Image from "next/image";
 
 interface Course {
   id: number;
@@ -13,6 +14,7 @@ interface Course {
   price: number;
   instructor: string;
   isFeatured: boolean;
+  image: string;
 }
 
 function FeaturedSection() {
@@ -37,6 +39,7 @@ function FeaturedSection() {
             <div key={course.id} className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
+                  <Image src={course.image} alt="aa" width={330} height={100} />
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                     {course.title}
                   </p>
